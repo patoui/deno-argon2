@@ -136,7 +136,7 @@ export async function installPlugin(
 
 async function checkPermissions(shouldBuild: boolean) {
   let permissions = [
-    Deno.permissions.query({ name: "plugin" }),
+    // Deno.permissions.query({ name: "plugin" }),
     Deno.permissions.query({ name: "read", path: "./.deno_plugins" }),
     Deno.permissions.query({ name: "write", path: "./.deno_plugins" }),
   ];
